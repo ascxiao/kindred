@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kindred</title>
+<meta name="description" content="Kindred is a private, single-user personal automation.">
+<style>
+  :root { --bg: #f6f8f4; --card: #ffffff; --ink: #1f2a22; --muted: #5b6b5f; --accent: #2d6a4f; --line: #dfe7dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #121813; --card: #1a221c; --ink: #e6efe7; --muted: #a3b3a6; --accent: #74c69d; --line: #2a362d; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); padding: 48px 16px; }
+  main { max-width: 640px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 32px 28px; }
+  h1 { margin: 0 0 4px; font-size: 1.9rem; color: var(--accent); }
+  .tag { margin: 0 0 24px; color: var(--muted); }
+  h2 { font-size: 1.05rem; margin: 24px 0 8px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  a { color: var(--accent); }
+  footer { max-width: 640px; margin: 16px auto 0; color: var(--muted); font-size: 0.9rem; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🌿 Kindred</h1>
+  <p class="tag">A private personal automation, used only by its owner.</p>
+
+  <p>Kindred is a personal assistant that runs on its owner's own computer. It connects a private Discord server to the owner's own tools so everyday tasks (logging expenses, organizing notes, and managing calendar events) can be done by sending a message. It is not a public service: no one else can sign up, and it only accesses the Google account of the person who runs it.</p>
+
+  <h2>What it uses Google access for</h2>
+  <ul>
+    <li><strong>Google Calendar:</strong> reads upcoming events to post reminders and show them in the owner's Discord server, and creates, updates, or deletes an event only after the owner confirms in Discord.</li>
+    <li><strong>Google Sheets:</strong> reads and adds rows in the owner's personal finance spreadsheet.</li>
+  </ul>
+
+  <p>Details about how this data is handled are in the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+<footer>Kindred · personal project · <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
